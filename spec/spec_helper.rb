@@ -9,7 +9,6 @@ require 'factory_bot'
 require 'ffaker'
 require 'database_cleaner'
 require 'vcr'
-require 'pry'
 # Run any available migration
 ActiveRecord::Migrator.migrate File.expand_path("../dummy/db/migrate/", __FILE__)
 

@@ -22,13 +22,13 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  solidus_version = ['> 1.0', '< 3']
+  solidus_version = ['>= 4.5']
 
   s.add_dependency 'solidus_core', solidus_version
   s.add_dependency 'solidus_support'
   s.add_dependency 'solidus_backend', solidus_version
   s.add_dependency 'solidus_api', solidus_version
-  s.add_dependency 'active_shipping', '~> 1.13'
+  s.add_dependency 'active_shipping'
 
   s.add_development_dependency 'byebug'
   s.add_development_dependency 'capybara', '~> 2.1'
@@ -37,12 +37,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_bot_rails'
   s.add_development_dependency 'ffaker', '>= 1.25.0'
   s.add_development_dependency 'poltergeist', '~> 1.5'
-  s.add_development_dependency 'pry'
-  s.add_development_dependency 'pry-rails', '>= 0.3.0'
   s.add_development_dependency 'rspec-rails', '~> 3.1'
   s.add_development_dependency 'rspec-activemodel-mocks'
   s.add_development_dependency 'simplecov', '~> 0.9'
-  s.add_development_dependency 'capybara-webkit'
   s.add_development_dependency 'capybara-screenshot'
   s.add_development_dependency 'vcr'
   s.add_development_dependency 'webmock'
